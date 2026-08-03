@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swaminarayan Gurukul of Information Technology</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+          integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+          crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <div class="nav-logo">
+                <img src="logo.png" alt="Gurukul Logo" class="logo">
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#courses">Courses</a></li>
+                <li><a href="#faculty">Faculty</a></li>
+                <li><a href="#admissions">Admissions</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </nav>
+    </header>
+
+    <div class="marquee-wrap">
+        <div class="marquee-track">
+            <span>📢 Admissions Open for 2026-27 &nbsp;&nbsp;|&nbsp;&nbsp; Annual Tech Fest coming soon &nbsp;&nbsp;|&nbsp;&nbsp; Placement Drive results announced</span>
+        </div>
+    </div>
+
+    <main>
+
+        <section id="home" class="hero" style="background-image: url('15.jpeg');">
+            <div class="hero-overlay">
+                <h2 class="hero-title">Swaminarayan Gurukul of Information Technology</h2>
+                <p class="hero-tagline">Shaping Future Innovators in Technology &amp; Beyond</p>
+
+                <div class="hero-buttons">
+                    <a href="#courses" class="btn btn-primary">Explore Courses</a>
+                    <a href="#admissions" class="btn btn-secondary">Admission Open</a>
+                </div>
+            </div>
+        </section>
+
+        <section aria-label="Campus photo gallery">
+            <div class="marquee">
+                <div class="marquee-track" id="track">
+                    <img src="15.jpeg" alt="Students gathered on campus">
+                    <img src="group.jpeg" alt="Student group photo">
+                    <img src="gt.jpeg" alt="Campus event">
+                    <img src="swamiji.JPG" alt="Swamiji addressing students">
+                    <img src="teachers.jpeg" alt="Faculty members">
+                    <img src="trophyhandedjiya.jpeg" alt="Trophy presentation">
+                    <img src="prayer.jpeg" alt="Morning assembly">
+                    <img src="D.JPG" alt="Campus life">
+                    <img src="Bg.JPG" alt="Campus event"> 
+                    <img src="td.JPG" alt="Students with Indian flag">
+                    <img src="BH.JPG" alt="Campus event">
+                </div>
+            </div>
+        </section>
+
+        <div class="stats-strip">
+            <div class="stat-item">
+                <span class="stat-number">500+</span>
+                <span class="stat-label">Students</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number">2+</span>
+                <span class="stat-label">Years</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number">70%</span>
+                <span class="stat-label">Placement Rate</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number">10+</span>
+                <span class="stat-label">Faculty Members</span>
+            </div>
+        </div>
+
+        <div class="section-container" id="about">
+            <section class="about">
+                <div class="section">
+                    <img src="swamiji.JPG" alt="Swamiji with students at a campus event" class="section-img">
+                    <div>
+                        <p class="eyebrow">Who we are</p>
+                        <h3>About the Institute</h3>
+                        <p>A Gurukul is not a slogan here — it's the timetable. Mornings begin with assembly and reflection; afternoons belong to compilers, spreadsheets and studio work.
+
+Shri Swaminarayan Gurukul Institute of Information Technology sits within the larger Shaikshanik Sankul campus at Chhaya, Porbandar. We run undergraduate programs in computer applications and information technology inside a residential-style campus that still keeps its festivals, its assemblies and its sense of community intact.
+
+Faculty mentors track every student individually, batch sizes stay small by design, and the technical curriculum sits alongside cultural, sporting and leadership programming — because a computer science graduate who has organised a 200-person festival is a different kind of employee than one who hasn't.
+
+Discipline &amp; daily structure · Industry-aligned IT curriculum · Residential &amp; day-scholar options</p>
+                        <button class="know-more-btn" data-course="about">Know More</button>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- ===================== Courses ===================== -->
+   <section id="courses" class="courses-section">
+            <div class="section-container">
+                <div class="section-heading">
+                    <p class="eyebrow">Programs</p>
+                    <h2>Courses on Offer</h2>
+                    <p>Undergraduate and diploma programs, each built around small batches and a faculty mentor who tracks your progress year on year.</p>
+                </div>
+ 
+                <div class="course-grid">
+                    <div class="course-card">
+                        <div class="course-card-tab">bba.program</div>
+                        <div class="course-card-body">
+                            <h3>Bachelor of Business Administration</h3>
+                            <p class="course-meta">3 Years · Full-time</p>
+                            <p>A management degree covering marketing, finance, HR and strategy, built around case studies and a final-year project.</p>
+                            <button class="btn btn-outline-gold" data-course="bba">View Curriculum</button>
+                        </div>
+                    </div>
+ 
+                    <div class="course-card">
+                        <div class="course-card-tab">bca.program</div>
+                        <div class="course-card-body">
+                            <h3>Bachelor of Computer Applications</h3>
+                            <p class="course-meta">3 Years · Full-time</p>
+                            <p>Application-focused computing: software development, mobile apps and cloud fundamentals, with an emphasis on shipped projects.</p>
+                            <button class="btn btn-outline-gold" data-course="bca">View Curriculum</button>
+                        </div>
+                    </div>
+ 
+                    <div class="course-card">
+                        <div class="course-card-tab">bcom.program</div>
+                        <div class="course-card-body">
+                            <h3>Bachelor of Commerce</h3>
+                            <p class="course-meta">3 Years · Full-time</p>
+                            <p>A commerce degree covering accounting, taxation, business law and financial management, geared toward finance and audit careers.</p>
+                            <button class="btn btn-outline-gold" data-course="bcom">View Curriculum</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===================== Faculty ===================== -->
+        <section id="faculty">
+            <div class="section-container">
+                <div class="section-heading">
+                    <p class="eyebrow">Mentors</p>
+                    <h2>Facultys Of BCA Department</h2>
+                    <p>Small batches mean every student has a mentor who knows their name — and their progress.</p>
+                </div>
+
+                <div class="faculty-grid">
+                    <div class="faculty-card">
+                        <img src="teachers.jpeg" alt="Faculty member" class="faculty-photo">
+                        <h4>PAYAL MARSHRU</h4>
+                        <p class="faculty-role">Head of Department</p>
+                        <p class="faculty-subject">PRINCIPAL & DIRECTOR</p>
+                    </div>
+                    <div class="faculty-card">
+                        <img src="teachers.jpeg" alt="Faculty member" class="faculty-photo">
+                        <h4>KAMAL RAMAVAT</h4>
+                        <p class="faculty-role">Assistant Professor</p>
+                        <p class="faculty-subject">Data Structures &amp; Algorithms</p>
+                    </div>
+                    <div class="faculty-card">
+                        <img src="teachers.jpeg" alt="Faculty member" class="faculty-photo">
+                        <h4>NIKITA AHUJA</h4>
+                        <p class="faculty-role">Assistant Professor</p>
+                        <p class="faculty-subject">Web Technologies</p>
+                    </div>
+                    <div class="faculty-card">
+                        <img src="teachers.jpeg" alt="Faculty member" class="faculty-photo">
+                        <h4>JIGNESH VAJA</h4>
+                        <p class="faculty-role">Assistant Professor</p>
+                        <p class="faculty-subject">Database Systems</p>
+                    </div>
+                    <div class="faculty-card">
+                        <img src="teachers.jpeg" alt="Faculty member" class="faculty-photo">
+                        <h4>LAKHAN KESHWALA</h4>
+                        <p class="faculty-role">Assistant Professor</p>
+                        <p class="faculty-subject">Database Systems</p>
+                    </div>
+                    <div class="faculty-card">
+                        <img src="teachers.jpeg" alt="Faculty member" class="faculty-photo">
+                        <h4>BHAGYSHREE PARMAR</h4>
+                        <p class="faculty-role">Lecturer</p>
+                        <p class="faculty-subject">Database Systems</p>
+                    </div>
+                    <div class="faculty-card">
+                        <img src="teachers.jpeg" alt="Faculty member" class="faculty-photo">
+                        <h4>TEJAS BAMAINYA</h4>
+                        <p class="faculty-role">Lecturer</p>
+                        <p class="faculty-subject">Database Systems</p>
+                    </div>
+                    <div class="faculty-card">
+                        <img src="teachers.jpeg" alt="Faculty member" class="faculty-photo">
+                        <h4>DHARTI MA'AM</h4>
+                        <p class="faculty-role">Lecturer</p>
+                        <p class="faculty-subject">Database Systems</p>
+                    </div>
+                    <div class="faculty-card">
+                        <img src="teachers.jpeg" alt="Faculty member" class="faculty-photo">
+                        <h4>ASHISH SIR</h4>
+                        <p class="faculty-role">Lecturer</p>
+                        <p class="faculty-subject">Database Systems</p>
+                    </div>
+                    <div class="faculty-card">
+                        <img src="teachers.jpeg" alt="Faculty member" class="faculty-photo">
+                        <h4>NIRVI THAKRAR</h4>
+                        <p class="faculty-role">Lecturer</p>
+                        <p class="faculty-subject">Database Systems</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- =====================RANKERS OF SSGIT ===================== -->
+        <section id="faculty">
+            <div class="section-container">
+                <div class="section-heading">
+                    <p class="eyebrow">TOPPERS</p>
+                    <h2>Rankers of SSGIT</h2>
+                    <p>Small batches mean every student has a mentor who knows their name — and their progress.</p>
+                </div>
+
+                <div class="faculty-grid">
+                    <div class="faculty-card">
+                        <img src="teachers.jpeg" alt="Faculty member" class="faculty-photo">
+                        <h4>DHAYANA BHARTI</h4>
+                        <p class="faculty-role">GTU TOPPERS</p>
+                        <p class="faculty-subject">Breaks the records of GTU</p>
+                    </div>
+                    <div class="faculty-card">
+                        <img src="teachers.jpeg" alt="Faculty member" class="faculty-photo">
+                        <h4>JIYA ANILKUMAR BASERA</h4>
+                        <p class="faculty-role">GTU TOPPERS</p>
+                        <p class="faculty-subject">Data Structures &amp; Algorithms</p>
+                    </div>
+                    <div class="faculty-card">
+                        <img src="teachers.jpeg" alt="Faculty member" class="faculty-photo">
+                        <h4>PRATIK RAJENDRA PRASAD YADAV</h4>
+                        <p class="faculty-role">GTU TOPPERS</p>
+                        <p class="faculty-subject">Web Technologies</p>
+                    </div>
+                    <div class="faculty-card">
+                        <img src="teachers.jpeg" alt="Faculty member" class="faculty-photo">
+                        <h4>KAVAN VELJI BADARSHAHI</h4>
+                        <p class="faculty-role">GTU TOPPERS</p>
+                        <p class="faculty-subject">Database Systems</p>
+                    </div>
+                    <div class="faculty-card">
+                        <img src="teachers.jpeg" alt="Faculty member" class="faculty-photo">
+                        <h4>SHRUTI BAMANIYA</h4>
+                        <p class="faculty-role">GTU TOPPERS</p>
+                        <p class="faculty-subject">Database Systems</p>
+                    </div>
+                    <div class="faculty-card">
+                        <img src="teachers.jpeg" alt="Faculty member" class="faculty-photo">
+                        <h4>TULSI BHIKHUBHAI KOTIA</h4>
+                        <p class="faculty-role">GTU TOPPERS</p>
+                        <p class="faculty-subject">Database Systems</p>
+                    </div>
+                    <div class="faculty-card">
+                        <img src="teachers.jpeg" alt="Faculty member" class="faculty-photo">
+                        <h4>KRISHNA BHARTHI MAIYARA</h4>
+                        <p class="faculty-role">GTU TOPPERS</p>
+                        <p class="faculty-subject">Database Systems</p>
+                    </div>
+                    <div class="faculty-card">
+                        <img src="teachers.jpeg" alt="Faculty member" class="faculty-photo">
+                        <h4>PRIYANKAA ADATIYA</h4>
+                        <p class="faculty-role">GTU TOPPERS</p>
+                        <p class="faculty-subject">Database Systems</p>
+                    </div>
+                    <div class="faculty-card">
+                        <img src="teachers.jpeg" alt="Faculty member" class="faculty-photo">
+                        <h4>AASTHA RATHOD</h4>
+                        <p class="faculty-role">GTU TOPPERS</p>
+                        <p class="faculty-subject">Database Systems</p>
+                    </div>
+                    <div class="faculty-card">
+                        <img src="teachers.jpeg" alt="Faculty member" class="faculty-photo">
+                        <h4>NUPUR </h4>
+                        <p class="faculty-role">GTU TOPPERS</p>
+                        <p class="faculty-subject">Database Systems</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+       
+
+        <!-- ===================== Admissions ===================== -->
+        <section id="admissions" class="admissions-section">
+            <div class="section-container">
+                <div class="section-heading">
+                    <p class="eyebrow">Join us</p>
+                    <h2>Admissions 2026-27</h2>
+                    <p>Applications are open. Here's how the process works.</p>
+                </div>
+
+                <div class="admissions-grid">
+                    <div class="admissions-steps">
+                        <div class="admission-step">
+                            <span class="step-num"></span>
+                            <div>
+                                <h4>Submit your application</h4>
+                                <p>Fill out the enquiry form below or visit the campus office with your academic records.</p>
+                            </div>
+                        </div>
+                        <div class="admission-step">
+                            <span class="step-num"></span>
+                            <div>
+                                <h4>Counselling &amp; document check</h4>
+                                <p>Meet a faculty counsellor to pick the right program and verify eligibility documents.</p>
+                            </div>
+                        </div>
+                        <div class="admission-step">
+                            <span class="step-num"></span>
+                            <div>
+                                <h4>Confirm your seat</h4>
+                                <p>Pay the admission fee to lock in your seat for the 2026-27 batch.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="admissions-panel">
+                        <h4>Key Dates &amp; Info</h4>
+                        <ul>
+                            <li><span>Applications open</span><span>2026-27 Batch</span></li>
+                            <li><span>Eligibility</span><span>10+2, any stream</span></li>
+                            <li><span>Mode</span><span>Residential / Day-scholar</span></li>
+                            <li><span>Seats</span><span>Limited, first-come</span></li>
+                        </ul>
+                        <a href="#contact" class="btn btn-primary">Enquire Now</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===================== Contact ===================== -->
+        <section id="contact" class="contact-section">
+            <div class="section-heading">
+                <p class="eyebrow">Get in touch</p>
+                <h2>Contact Us</h2>
+                <p>Questions about admissions, courses, or campus life — reach out and we'll get back to you.</p>
+            </div>
+
+            <div class="contact-grid">
+                <div class="contact-info-list">
+                    <div class="contact-info-item">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <div>
+                            <h4>Campus Address</h4>
+                            <p>Shaikshanik Sankul Campus, Chhaya, Porbandar, Gujarat, India</p>
+                        </div>
+                    </div>
+                    <div class="contact-info-item">
+                        <i class="fa-solid fa-phone"></i>
+                        <div>
+                            <h4>Phone</h4>
+                            <p><a href="tel:+910000000000">+91 00000 00000</a></p>
+                        </div>
+                    </div>
+                    <div class="contact-info-item">
+                        <i class="fa-solid fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p><a href="mailto:info@swaminarayangurukul.edu">info@swaminarayangurukul.edu</a></p>
+                        </div>
+                    </div>
+                    <div class="contact-info-item">
+                        <i class="fa-solid fa-clock"></i>
+                        <div>
+                            <h4>Office Hours</h4>
+                            <p>Mon – Sat, 9:00 AM – 5:00 PM</p>
+                        </div>
+                    </div>
+
+                    <div class="social-row">
+                        <a href="https://www.instagram.com/swaminarayan_college_of_it?igsh=b3F5Nmk1Z2h5eHM5" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/swaminarayan_college_of_it?igsh=b3F5Nmk1Z2h5eHM5" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.instagram.com/swaminarayan_college_of_it?igsh=b3F5Nmk1Z2h5eHM5" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+                        <a href="https://www.instagram.com/swaminarayan_college_of_it?igsh=b3F5Nmk1Z2h5eHM5" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+
+                <form class="contact-form" id="contactForm" novalidate>
+                    <div class="form-row">
+                        <div>
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" name="name" autocomplete="name" required>
+                        </div>
+                        <div>
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" autocomplete="email" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div>
+                            <label for="phone">Phone</label>
+                            <input type="tel" id="phone" name="phone" autocomplete="tel">
+                        </div>
+                        <div>
+                            <label for="program">Interested Program</label>
+                            <select id="program" name="program">
+                                <option value="">Select a program</option>
+                                <option value="bsc_it">BCOM</option>
+                                <option value="bca">BCA</option>
+                                <option value="dca">BBA</option>
+                                <option value="other">Other / Not sure</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div>
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                    <p class="form-status" id="formStatus" role="status"></p>
+                </form>
+            </div>
+
+            <div class="map-embed">
+                <iframe
+                    title="Campus location map"
+                    src="https://www.openstreetmap.org/export/embed.html?bbox=69.60%2C21.60%2C69.65%2C21.65&layer=mapnik"
+                    loading="lazy"></iframe>
+            </div>
+        </section>
+    </main>
+
+    <!-- Know More / Curriculum Modal -->
+    <div class="modal-overlay" id="curriculumModal">
+        <div class="modal-box">
+            <button class="modal-close" id="modalCloseBtn" aria-label="Close">&times;</button>
+            <h2 id="modalTitle">Course Curriculum</h2>
+
+            <div class="year-tabs" id="yearTabs"></div>
+            <div class="year-content" id="yearContent"></div>
+        </div>
+    </div>
+
+    <footer class="site-footer">
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <img src="logo.png" alt="Gurukul Logo" class="logo">
+                <p>Shri Swaminarayan Gurukul Institute of Information Technology, part of the Shaikshanik Sankul campus at Chhaya, Porbandar.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#courses">Courses</a></li>
+                    <li><a href="#faculty">Faculty</a></li>
+                    <li><a href="#admissions">Admissions</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Contact</h4>
+                <ul>
+                    <li><a href="tel:+910000000000">+91 00000 00000</a></li>
+                    <li><a href="https://www.instagram.com/swaminarayan_college_of_it?igsh=b3F5Nmk1Z2h5eHM5">info@swaminarayangurukul.edu</a></li>
+                    <li>Chhaya, Porbandar, Gujarat</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; <span id="year"></span> Swaminarayan Gurukul of Information Technology. All rights reserved.</p>
+            <p>Built with care, for the next batch.</p>
+        </div>
+    </footer>
+
+    <script src="script.js" defer></script>
+</body>
+</html>
