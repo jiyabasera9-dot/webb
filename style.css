@@ -416,6 +416,13 @@ header {
 
 .course-card .btn { align-self: flex-start; padding: 0.65rem 1.4rem; font-size: 0.85rem; }
 
+.btn.btn-outline-gold1 {
+    background: transparent;
+    border: 2px solid var(--gold);
+    color: var(--gold);
+    margin-top: 0.5rem;
+}
+
 /* ---------------- Faculty ---------------- */
 .faculty-grid {
     display: grid;
