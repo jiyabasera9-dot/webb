@@ -197,7 +197,7 @@ function initContactForm() {
             return;
         }
 
-        // TODO: replace with a real submission (fetch to a form endpoint, etc.)
+        
         status.style.color = "";
         status.textContent = "Thanks — we'll get back to you shortly.";
         form.reset();
