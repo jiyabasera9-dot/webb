@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", () => {
     initGalleryLoop();
     initMobileNav();
     initScrollSpy();
-    initCurriculumModal();
+    // initCurriculumModal();
     initContactForm();
 });
 
@@ -74,109 +74,6 @@ function initScrollSpy() {
 
 /* ---------------- Curriculum data ---------------- */
 
-const CURRICULUM = {
-    about: {
-        title: "About the Institute",
-        years: {
-            "Overview": [
-                "Residential & day-scholar undergraduate programs",
-                "Small batch sizes with individual faculty mentoring",
-                "Technical curriculum alongside cultural & leadership programming",
-                "Daily structure: morning assembly, academic sessions, evening activities",
-            ],
-        },
-    },
-    bba: {
-        title: "Bachelor of Business Administration",
-        years: {
-            "Year 1": ["Principles of Management", "Business Communication", "Financial Accounting", "Business Economics"],
-            "Year 2": ["Marketing Management", "Human Resource Management", "Business Statistics", "Organizational Behaviour"],
-            "Year 3": ["Entrepreneurship Development", "Strategic Management", "Business Analytics Basics", "Major Project"],
-        },
-    },
-    bca: {
-        title: "Bachelor of Computer Applications",
-        years: {
-            "Year 1": ["Programming in C", "Computer Fundamentals", "Business Mathematics", "Digital Electronics"],
-            "Year 2": ["Data Structures", "DBMS & SQL", "Python Programming", "Computer Networks"],
-            "Year 3": ["Software Engineering", "Mobile App Development", "Cloud Computing Basics", "Major Project"],
-        },
-    },
-    bcom: {
-        title: "Bachelor of Commerce",
-        years: {
-            "Year 1": ["Financial Accounting", "Business Law", "Micro Economics", "Business Communication"],
-            "Year 2": ["Corporate Accounting", "Income Tax Law & Practice", "Cost Accounting", "Business Statistics"],
-            "Year 3": ["Auditing", "Corporate Law", "Financial Management", "GST & Indirect Taxes"],
-        },
-    },
-};
- 
-function initCurriculumModal() {
-    const overlay = document.getElementById("curriculumModal");
-    const closeBtn = document.getElementById("modalCloseBtn");
-    const titleEl = document.getElementById("modalTitle");
-    const tabsEl = document.getElementById("yearTabs");
-    const contentEl = document.getElementById("yearContent");
-    if (!overlay || !titleEl || !tabsEl || !contentEl) return;
- 
-    document.querySelectorAll("[data-course]").forEach((btn) => {
-        btn.addEventListener("click", () => {
-            const key = btn.getAttribute("data-course");
-            const data = CURRICULUM[key];
-            if (!data) return;
-            openModal(data);
-        });
-    });
- 
-    function openModal(data) {
-        titleEl.textContent = data.title;
-        tabsEl.innerHTML = "";
-        contentEl.innerHTML = "";
- 
-        const yearKeys = Object.keys(data.years);
-        yearKeys.forEach((yearKey, i) => {
-            const tabBtn = document.createElement("button");
-            tabBtn.className = "year-tab-btn" + (i === 0 ? " active" : "");
-            tabBtn.type = "button";
-            tabBtn.textContent = yearKey;
-            tabBtn.addEventListener("click", () => {
-                tabsEl.querySelectorAll(".year-tab-btn").forEach((b) => b.classList.remove("active"));
-                tabBtn.classList.add("active");
-                renderYear(data.years[yearKey]);
-            });
-            tabsEl.appendChild(tabBtn);
-        });
- 
-        renderYear(data.years[yearKeys[0]]);
-        overlay.classList.add("active");
-        document.body.style.overflow = "hidden";
-    }
- 
-    function renderYear(topics) {
-        const ul = document.createElement("ul");
-        topics.forEach((t) => {
-            const li = document.createElement("li");
-            li.textContent = t;
-            ul.appendChild(li);
-        });
-        contentEl.innerHTML = "";
-        contentEl.appendChild(ul);
-    }
- 
-    function closeModal() {
-        overlay.classList.remove("active");
-        document.body.style.overflow = "";
-    }
- 
-    closeBtn?.addEventListener("click", closeModal);
-    overlay.addEventListener("click", (e) => {
-        if (e.target === overlay) closeModal();
-    });
-    document.addEventListener("keydown", (e) => {
-        if (e.key === "Escape") closeModal();
-    });
-}
 
 /* ---------------- Contact form (front-end only) ---------------- */
 
@@ -197,9 +94,17 @@ function initContactForm() {
             return;
         }
 
-        
         status.style.color = "";
-        status.textContent = "Thanks — we'll get back to you shortly.";
-        form.reset();
+        status.textContent = "Sending...";
+
+        emailjs.sendForm("Service_1sdbsre", "template_osurf5h", form)
+            .then(() => {
+                status.style.color = "#2fbf71";
+                status.textContent = "✅ Thank you! Check your email — we'll reach out to you soon.";
+                form.reset();
+            }, (error) => {
+                status.style.color = "#e5484d";
+                status.textContent = "❌ Something went wrong. Please try again or call us directly.";
+            });
     });
 }
