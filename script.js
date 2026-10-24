@@ -108,3 +108,35 @@ function initContactForm() {
             });
     });
 }
+
+/* ---------------- reviewss ---------------- */
+let rating = 0;
+const stars = document.querySelectorAll("#stars button");
+
+// click a star
+stars.forEach(function (s) {
+  s.onclick = function () {
+    rating = Number(s.dataset.v);
+    stars.forEach(function (x) {
+      x.classList.toggle("on", x.dataset.v <= rating);
+    });
+  };
+});
+
+// click Add Review
+document.getElementById("reviewForm").onsubmit = function (e) {
+  e.preventDefault();
+  if (!rating) { alert("Please choose a rating"); return; }
+
+  const item = document.createElement("div");
+  item.className = "item";
+  item.textContent =
+    document.getElementById("name").value + "\n" +
+    "★".repeat(rating) + "☆".repeat(5 - rating) + "\n" +
+    document.getElementById("text").value; 
+
+  document.getElementById("list").prepend(item);
+  e.target.reset();
+  rating = 0;
+  stars.forEach(function (x) { x.classList.remove("on"); });
+};

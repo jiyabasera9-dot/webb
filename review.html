@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Review page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="b">
+    <h1> College Reviews</h1>
+    <h4>Share what it’s really like to study here.</h4>
+    <div class="box">
+    <form class="review" id="reviewForm">
+        
+        <label for="name"> Your name</label><br>
+        <input type="text" id="name" maxlength="70" required>
+
+        <div id="stars">
+            <h3 class="rate">Ratings</h3>
+            <button type="button" data-v="1">★</button>
+            <button type="button" data-v="2">★</button>
+            <button type="button" data-v="3">★</button>
+            <button type="button" data-v="4">★</button>
+            <button type="button" data-v="5">★</button>
+        </div>  
+
+        <label for="text">Your review</label><br>
+        <textarea id="text" rows="5" maxlength="1000"></textarea><br>
+
+       <button type="submit" class="btnn">Add Review</button>
+         <p id="error" style="color:red"></p>
+
+    </form>
+    </div>
+    <h3 class="rh">All Reviews</h3>
+    <table>
+    <!-- <tr class="rows">
+        <td>Name</td>
+        <td>Reviews</td>
+    </tr>
+    </table> -->
+    <div id="list"></div>
+    <script src="script.js"></script>
+</body>
+</html>
